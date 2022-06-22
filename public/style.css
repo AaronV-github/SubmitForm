@@ -1,0 +1,24 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formBox{
+    font-size: 50px;
+    border-style: solid;
+    border-radius: 8px;
+    width: 50rem;
+    height: 20rem;
+}
+
+.formBox input{
+    width: 200px;
+    height: 40px;
+    font-size: 40px;
+}
