@@ -5,6 +5,8 @@ const bodyParser = require("body-parser");
 const port = process.env.PORT || 3000
 
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static('public'));
+app.use('/public', express.static( __dirname + '/public'));
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/' + 'index.html');
